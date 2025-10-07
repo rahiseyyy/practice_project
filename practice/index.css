@@ -1,0 +1,129 @@
+/* General Styling */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(90deg, #00c6ff, #367bd1, #7d44d7);
+  color: #ffffff;
+  text-align: center;
+}
+
+/* Title */
+.title {
+  font-size: 60px;
+  margin: 20px 0;
+  animation: zoomIn 2s ease-in-out forwards;
+}
+
+/* Top Section */
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 50px;
+}
+.login {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* Sports Section */
+.sports {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  margin: 40px 0;
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 15px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  transition: transform 0.4s;
+  color: #111;
+}
+
+.card img {
+  width: 180px;
+  height: 180px;
+  border-radius: 12px;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+/* Optional bounce effect */
+.cardbounce {
+  animation: bounce 2s infinite;
+}
+
+/* Venues */
+.section-title {
+  margin-top: 40px; 
+}
+
+.venues {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.venues img {
+  width: 220px;
+  height: 200px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+  color: aquamarine;
+}
+
+.venues img:hover {
+  transform: scale(1.05);
+}
+
+/* Paragraph Section */
+.para {
+  padding: 30px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.store img {
+  height: 50px;
+  margin: 10px;
+  transition: transform 0.3s ease;
+}
+.store img:hover {
+  transform: scale(1.2);
+}
+
+/* Animations */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 2s forwards;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}
+
+.bounce {
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+.slide-up {
+  animation: slideUp 2s ease-out;
+}
+
+@keyframes slideUp {
+  from { transform: translateY(100px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
